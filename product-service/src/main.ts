@@ -10,7 +10,7 @@ async function bootstrap() {
     transport: Transport.GRPC,
     options: {
       package: 'product',
-      protoPath: join(__dirname, '../protos/product.proto'),
+      protoPath: join(__dirname, '../../protos/product.proto'),
       url: 'localhost:50052',
     },
   });

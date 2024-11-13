@@ -12,7 +12,7 @@ import { ProductController } from './controllers/product.controller';
         transport: Transport.GRPC,
         options: {
           package: 'auth',
-          protoPath: join(__dirname, '../protos/auth.proto'),
+          protoPath: join(__dirname, '../../protos/auth.proto'),
           url: 'localhost:50051',
         },
       },
@@ -21,7 +21,7 @@ import { ProductController } from './controllers/product.controller';
         transport: Transport.GRPC,
         options: {
           package: 'product',
-          protoPath: join(__dirname, '../protos/product.proto'),
+          protoPath: join(__dirname, '../../protos/product.proto'),
           url: 'localhost:50052',
         },
       },
