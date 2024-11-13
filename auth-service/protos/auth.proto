@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package auth;
+
+service AuthsService {
+  rpc GetAuth(GetAuthRequest) returns (GetAuthResponse) {}
+  rpc CreateAuth(CreateAuthRequest) returns (CreateAuthResponse) {}
+}
+
+message GetAuthRequest {
+  string email = 1;
+}
+
+message GetAuthResponse {
+  string name = 1;
+  string email = 2;
+}
+
+message CreateAuthRequest {
+  string name = 1;
+  string email = 2;
+}
+
+message CreateAuthResponse {
+  string name = 1;
+  string email = 2;
+}
